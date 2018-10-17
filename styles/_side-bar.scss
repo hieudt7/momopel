@@ -1,0 +1,93 @@
+﻿.side-nav {
+    background-color: $dark-gray-1;
+
+    .list-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            display: block;
+            height: 24px;
+            padding-left: 25px;
+            margin-bottom: 20px;
+
+            a {
+                display: block;
+                font-size: 16px;
+                font-weight: 200;
+                color: $mm-white;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                cursor: pointer;
+                transition: all ease 0.15s;
+
+                span {
+                    display: block;
+                    float: left;
+                    padding-top: 2px;
+                    margin-left: 17px;
+                }
+
+                svg {
+                    float: left;
+                }
+
+                &.s-home {
+                    g {
+                        stroke: $light-gray-1;
+                    }
+                }
+            }
+
+            &.active,
+            &:hover {
+                a {
+                    color: $primary;
+
+                    &.s-home {
+                        g {
+                            stroke: $primary;
+                        }
+                    }
+
+                    &.s-head {
+                        g {
+                            g {
+                                fill: $primary;
+                            }
+                        }
+                    }
+
+                    &.s-book {
+                        path {
+                            stroke: $primary;
+                        }
+                    }
+
+                    &.s-momo {
+                        g path {
+                            fill: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .line {
+        padding: 10px 25px 0 25px;
+
+        hr {
+            border: solid 1px #1d1d1d;
+        }
+    }
+
+    .last-txt {
+        font-size: 14px;
+        font-weight: 300;
+        color: $mm-white;
+    }
+}

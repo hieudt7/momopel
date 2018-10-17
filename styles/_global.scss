@@ -1,0 +1,73 @@
+body {
+    font-family: 'noto-sans-scott',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    display: table;
+    width: 100%;
+
+    .side-nav {
+        display: table-cell;
+        vertical-align: top;
+        width: 220px;
+        height: 100vh;
+    }
+
+    .side-content {
+        display: table-cell;
+        vertical-align: top;
+        background-color: $mm-black;
+
+        .content {
+            min-width: 1080px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        display: inline-block;
+    }
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3, h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.subtile-1 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.subtile-2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.caption {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 900;
+}

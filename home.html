@@ -1,0 +1,585 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>MOMO</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/font-awesome/css/fontawesome-all.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="side-nav">
+        <h1 class="logo">
+            <a href="/" title="Momo">
+                <img src="assets/images/logo-white.svg" alt="logo" />
+            </a>
+        </h1>
+        <ul class="list-menu">
+            <li class="active">
+                <a class="s-home clearfix">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5.509 9v10.556h12.009V9" /><path d="M3.57 10.536l7.974-7 8.042 7" /></g></svg>
+                    <span>홈</span>
+                </a>
+            </li>
+            <li>
+                <a class="s-head clearfix">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" /><g fill="#999"><path d="M18.393 16.612v-1.797a3.451 3.451 0 0 0-3.44-3.441.593.593 0 0 0-.594.593v7.492c0 .328.266.594.594.594a3.451 3.451 0 0 0 3.44-3.441M5.278 16.612v-1.797a3.451 3.451 0 0 1 3.44-3.441c.328 0 .594.265.594.593v7.492a.593.593 0 0 1-.594.594 3.451 3.451 0 0 1-3.44-3.441" /><path d="M19.972 15.864a.677.677 0 0 1-.673-.761c.007-.051.61-5.182-2.018-8.157-1.255-1.42-3.078-2.14-5.42-2.14a.677.677 0 1 1 0-1.355c2.75 0 4.916.876 6.44 2.604 3.032 3.439 2.372 8.983 2.342 9.217a.677.677 0 0 1-.67.592" /><path d="M3.751 15.864a.677.677 0 0 1-.67-.592c-.03-.234-.69-5.778 2.342-9.217 1.523-1.728 3.69-2.604 6.439-2.604a.677.677 0 0 1 0 1.354c-2.341 0-4.165.72-5.419 2.14-2.628 2.976-2.025 8.107-2.019 8.158a.677.677 0 0 1-.673.761" /></g></g></svg>
+                    <span>브라우즈</span>
+                </a>
+            </li>
+            <li>
+                <a class="s-book clearfix">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M15.5 4.5l4 15M4.5 4.5v15M8.5 4.5v15M12.5 4.5v15" /></g></svg>
+                    <span>라이브러리</span>
+                </a>
+            </li>
+            <li>
+                <a class="s-momo clearfix">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><path id="a" d="M.315.78h6.922v7.081H.315z" /><path id="c" d="M0 1.097h6.926v7.085H0z" /><path id="e" d="M0 .78h15.237v15.584H0z" /></defs><g fill="none" fill-rule="evenodd"><g transform="translate(12 3.857)"><mask id="b" fill="#fff"><use xlink:href="#a" /></mask><path fill="#999" d="M3.3 7.861L6.62 4.467a2.192 2.192 0 0 0 0-3.053 2.076 2.076 0 0 0-2.986 0L.315 4.808 3.3 7.86z" mask="url(#b)" /></g><g transform="translate(4 12.038)"><mask id="d" fill="#fff"><use xlink:href="#c" /></mask><path fill="#999" d="M3.94 1.097L.62 4.494a2.194 2.194 0 0 0 0 3.055c.823.844 2.16.844 2.985 0l3.321-3.397-2.985-3.055z" mask="url(#d)" /></g><g transform="translate(4 3.857)"><mask id="f" fill="#fff"><use xlink:href="#e" /></mask><path fill="#999" d="M3.605 1.413a2.076 2.076 0 0 0-2.986 0 2.192 2.192 0 0 0 0 3.054L11.634 15.73c.822.845 2.16.845 2.985 0a2.197 2.197 0 0 0 0-3.055L3.605 1.413z" mask="url(#f)" /></g></g></svg>
+                    <span>MOMO X</span>
+                </a>
+            </li>
+        </ul>
+        <div class="line">
+            <hr />
+            <p class="last-txt">최근 플레이한 리스트</p>
+        </div>
+    </div>
+    <div class="side-content">
+        <header class="clearfix">
+            <div class="search">
+                <i><img src="assets/images/svg_search.svg" /></i>
+                <input type="text" placeholder="Search" />
+            </div>
+            <ul class="user-conf">
+                <li>
+                    <a class="s-note">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" stroke="#999" stroke-width="1.3"><path d="M13.8 20H17a.945.945 0 0 0 1-1V5a.945.945 0 0 0-1-1h-3.2c-.3 0-.7.1-.8.4a1.174 1.174 0 0 1-1 .6 1 1 0 0 1-1-.6c-.1-.3-.5-.4-.8-.4H7a.945.945 0 0 0-1 1v14a.945.945 0 0 0 1 1h6.8z" /><path stroke-linecap="round" stroke-linejoin="round" d="M8.4 8.5h1.1M11.4 8.5h1.1M14.4 8.5h1.1" /></g></svg>
+                        <span>이용권</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="s-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" /><g fill-rule="nonzero" stroke="#999" stroke-width="1.5" transform="translate(5 5)"><circle cx="7" cy="4" r="4" /><path stroke-linecap="round" stroke-linejoin="round" d="M14 15a7 7 0 0 0-14 0" /></g></g></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="s-config">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" /><path fill="#999" fill-rule="nonzero" d="M12.434 21a6.271 6.271 0 0 1-1.33-.095 1.21 1.21 0 0 1-1.045-1.045l-.095-1.33a12.168 12.168 0 0 1-1.9-1.045l-1.235.475a1.21 1.21 0 0 1-1.425-.38 7.3 7.3 0 0 1-1.325-2.374 1.367 1.367 0 0 1 .38-1.425l1.045-.76a4.625 4.625 0 0 1-.095-1.14 4.625 4.625 0 0 1 .095-1.14l-1.049-.664c-.4-.315-.55-.85-.376-1.327.35-.84.796-1.638 1.33-2.375a1.21 1.21 0 0 1 1.425-.38l1.235.57a5.357 5.357 0 0 1 1.9-1.045l.095-1.33a1.21 1.21 0 0 1 1.04-1.048 6.728 6.728 0 0 1 2.755 0c.545.07.975.5 1.045 1.045l.095 1.33c.663.291 1.299.64 1.9 1.045l1.235-.57a1.21 1.21 0 0 1 1.425.38 8.422 8.422 0 0 1 1.329 2.378 1.367 1.367 0 0 1-.38 1.425l-1.045.76c.079.375.11.758.095 1.14.016.382-.016.765-.095 1.14l1.045.76c.456.32.617.92.38 1.425-.35.84-.796 1.638-1.33 2.375-.36.394-.917.542-1.425.38l-1.235-.57a5.357 5.357 0 0 1-1.9 1.045l-.095 1.33c-.072.543-.5.97-1.044 1.04h-1.425zm.665-3.13c.081-.474.406-.871.855-1.045a4.227 4.227 0 0 0 1.995-1.14c.377-.298.885-.37 1.33-.19l.665-1.14a1.237 1.237 0 0 1-.475-1.235c.11-.37.173-.754.19-1.14a2.41 2.41 0 0 0-.19-1.14c-.094-.469.091-.95.475-1.235l-.665-1.143c-.445.18-.953.108-1.33-.19a4.227 4.227 0 0 0-1.995-1.14 1.369 1.369 0 0 1-.855-1.045h-1.33a1.261 1.261 0 0 1-.76 1.045 4.227 4.227 0 0 0-1.995 1.14c-.377.298-.885.37-1.33.19a.626.626 0 0 0-.855.285.554.554 0 0 0 .19.855c.384.285.569.766.475 1.235a7.014 7.014 0 0 0-.19 1.14c.024.385.088.767.19 1.14.093.468-.091.948-.474 1.233l.665 1.14c.445-.18.953-.108 1.33.19.596.49 1.27.875 1.995 1.14.467.148.802.558.855 1.045l1.234.005z" /><path fill="#999" fill-rule="nonzero" d="M12.433 19.005a7.029 7.029 0 1 1 7.029-7.029 7.013 7.013 0 0 1-7.029 7.029zm0-12.158a5.129 5.129 0 1 0 5.129 5.129 5.108 5.108 0 0 0-5.129-5.129z" /><circle cx="12.434" cy="12.071" r="1.9" fill="#999" fill-rule="nonzero" /></g></svg>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="home">
+                <section class="top-news">
+                    <div class="row clearfix list-item">
+                        <div class="col-xs-12 col-sm-4">
+                            <a href="#" title="news"><img src="assets/images/m_news_1.PNG" /></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <a href="#" title="news"><img src="assets/images/m_news_1.PNG" /></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <a href="#" title="news"><img src="assets/images/m_news_1.PNG" /></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="hot-news">
+                    <h3 class="section-title">HOT&NEW</h3>
+                    <div class="row list-item">
+                        <div class="col-sm-6 col-md-2">
+                            <img src="assets/images/Album_1.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img src="assets/images/Album_2.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img src="assets/images/Album_3.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img src="assets/images/Album_4.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img src="assets/images/Album_5.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img src="assets/images/Album_6.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="top-100">
+                    <h3 class="section-title">
+                        <span>
+                            MOMO CHART TOP 100
+                        </span>
+                        <span class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" /><path stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round" d="M8 4l8 8-8 8" /></g></svg>
+                        </span>
+                    </h3>
+                    <div class="album">
+                        <div class="avatar">
+                            <img src="assets/images/top_avatar.PNG" />
+                        </div>
+                        <div>
+                            <div class="clearfix list-album">
+                                <div class="col-sm-6">
+                                    <table class="source-info">
+                                        <tr>
+                                            <td class="number">
+                                                <span>1</span>
+                                            </td>
+                                            <td class="top">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" fill-rule="evenodd" stroke="#666" stroke-linecap="square" d="M7 12h10" /></svg>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="number">
+                                                <span>2</span>
+                                            </td>
+                                            <td class="top">
+                                                <span class="down">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6"><path fill="#FF3E3E" fill-rule="evenodd" d="M4 0l4 6H0z" /></svg>10
+                                                </span>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="number">
+                                                <span>3</span>
+                                            </td>
+                                            <td class="top">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" fill-rule="evenodd" stroke="#666" stroke-linecap="square" d="M7 12h10" /></svg>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="number">
+                                                <span>4</span>
+                                            </td>
+                                            <td class="top">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" fill-rule="evenodd" stroke="#666" stroke-linecap="square" d="M7 12h10" /></svg>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="number">
+                                                <span>5</span>
+                                            </td>
+                                            <td class="top">
+                                                <span class="up">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6"><path fill="#83D6FF" fill-rule="evenodd" d="M4 6l4-6H0z" /></svg>2
+                                                </span>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-sm-6">
+                                    <table class="source-info">
+                                        <tr>
+                                            <td class="number">
+                                                <span>1</span>
+                                            </td>
+                                            <td class="top">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" fill-rule="evenodd" stroke="#666" stroke-linecap="square" d="M7 12h10" /></svg>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="number">
+                                                <span>2</span>
+                                            </td>
+                                            <td class="top">
+                                                <span class="down">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6"><path fill="#FF3E3E" fill-rule="evenodd" d="M4 0l4 6H0z" /></svg>10
+                                                </span>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="number">
+                                                <span>3</span>
+                                            </td>
+                                            <td class="top">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" fill-rule="evenodd" stroke="#666" stroke-linecap="square" d="M7 12h10" /></svg>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="number">
+                                                <span>4</span>
+                                            </td>
+                                            <td class="top">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" fill-rule="evenodd" stroke="#666" stroke-linecap="square" d="M7 12h10" /></svg>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="number">
+                                                <span>5</span>
+                                            </td>
+                                            <td class="top">
+                                                <span class="up">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6"><path fill="#83D6FF" fill-rule="evenodd" d="M4 6l4-6H0z" /></svg>2
+                                                </span>
+                                            </td>
+                                            <td class="name">
+                                                <h5 class="subtile-2">Play Source</h5>
+                                                <p>Owner Info / Album</p>
+                                            </td>
+                                            <td class="action">
+                                                <a class="s-plus">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="nonzero" stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5h14M12.5 4.5v14" /></g></svg>
+                                                </a>
+                                                <!--<a class="s-heart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#111" d="M-808-626H632v2503H-808z" /><path fill="#FFF" fill-rule="nonzero" d="M116 105a4.034 4.034 0 0 1 4 4.1 4.146 4.146 0 0 1-.3 1.6c-.1.2-.2.5-.4.6l-7.3 7.6-7.3-7.6c-.1-.2-.3-.4-.4-.6a4.529 4.529 0 0 1-.3-1.6 4.034 4.034 0 0 1 4-4.1 3.8 3.8 0 0 1 4 2.7 4.2 4.2 0 0 1 4-2.7zm0-1a5.523 5.523 0 0 0-4 1.7 4.871 4.871 0 0 0-4-1.7 5.037 5.037 0 0 0-5 5.1c-.013.688.124 1.37.4 2 .128.342.333.65.6.9l7.3 7.6.7.7.7-.8 7.3-7.5c.291-.27.5-.616.6-1a4.477 4.477 0 0 0 .4-2 5.015 5.015 0 0 0-5-5z" /></g></svg>
+                                                </a>-->
+                                                <a class="s-dot">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#F2F2F2" fill-rule="nonzero"><path d="M11 6.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 12.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5zM11 18.5c.02-.82.68-1.48 1.5-1.5.82.02 1.48.68 1.5 1.5-.02.82-.68 1.48-1.5 1.5-.82-.02-1.48-.68-1.5-1.5z" /></g></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="today-list">
+                    <h3 class="section-title">
+                        <span>
+                            오늘의 플레이리스트
+                        </span>
+                        <span class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" /><path stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round" d="M8 4l8 8-8 8" /></g></svg>
+                        </span>
+                    </h3>
+                    <div class="row">
+                        <div class="col-sm-3 col-md-2">
+                            <img src="assets/images/Album_7.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-2">
+                            <img src="assets/images/Album_8.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-2">
+                            <img src="assets/images/Album_9.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-2">
+                            <img src="assets/images/Album_10.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-2">
+                            <img src="assets/images/Album_11.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-2">
+                            <img src="assets/images/Album_12.jpg" />
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="momo-x">
+                    <h3 class="section-title">
+                        <span>
+                            MOMO X
+                        </span>
+                        <span class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" /><path stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round" d="M8 4l8 8-8 8" /></g></svg>
+                        </span>
+                    </h3>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/images/momo_x.jpg" />
+                            <div class="mm-info">
+                                <h4 class="subtile-1">[모모문고] [EP.22] 남태현 편 (NAM TAEHYUN)</h4>
+                                <div class="status">
+                                    <span class="by">By. MOMOX</span>
+                                    <span class="like">
+                                        <img src="assets/images/icon/White.png" />862
+                                    </span>
+                                </div>
+                                <p>
+                                    "먹는 것은 누구나 좋아하는 거잖아요
+                                    먹는 즐거움과 행복함을 이 책을 통해서 느끼시길 바랍니다!"
+                                    태현이 고른 오늘의 책 1위는? ..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="assets/images/momo_x_2.jpg" />
+                            <div class="mm-info">
+                                <h4 class="subtile-1">[모모문고] [EP.22] 남태현 편 (NAM TAEHYUN)</h4>
+                                <div class="status">
+                                    <span class="by">By. MOMOX</span>
+                                    <span class="like">
+                                        <img src="assets/images/icon/White.png" />862
+                                    </span>
+                                </div>
+                                <p>
+                                    "먹는 것은 누구나 좋아하는 거잖아요
+                                    먹는 즐거움과 행복함을 이 책을 통해서 느끼시길 바랍니다!"
+                                    태현이 고른 오늘의 책 1위는? ..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="assets/images/momo_x_3.jpg" />
+                            <div class="mm-info">
+                                <h4 class="subtile-1">[모모문고] [EP.22] 남태현 편 (NAM TAEHYUN)</h4>
+                                <div class="status">
+                                    <span class="by">By. MOMOX</span>
+                                    <span class="like">
+                                        <img src="assets/images/icon/White.png" />862
+                                    </span>
+                                </div>
+                                <p>
+                                    "먹는 것은 누구나 좋아하는 거잖아요
+                                    먹는 즐거움과 행복함을 이 책을 통해서 느끼시길 바랍니다!"
+                                    태현이 고른 오늘의 책 1위는? ..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="video-list">
+                    <h3 class="section-title">
+                        <span>
+                            뮤직비디오
+                        </span>
+                        <span class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z" /><path stroke="#F2F2F2" stroke-linecap="round" stroke-linejoin="round" d="M8 4l8 8-8 8" /></g></svg>
+                        </span>
+                    </h3>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/images/momo_x_4.jpg" />
+                            <div class="mm-info">
+                                <h4 class="subtile-1">[모모문고] [EP.22] 남태현 편 (NAM TAEHYUN)</h4>
+                                <div class="status">
+                                    <span class="like">
+                                        <img src="assets/images/icon/White.png" />1,542
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="assets/images/momo_x_5.jpg" />
+                            <div class="mm-info">
+                                <h4 class="subtile-1">[모모문고] [EP.22] 남태현 편 (NAM TAEHYUN)</h4>
+                                <div class="status">
+                                    <span class="like">
+                                        <img src="assets/images/icon/White.png" />862
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="assets/images/momo_x_6.jpg" />
+                            <div class="mm-info">
+                                <h4 class="subtile-1">[모모문고] [EP.22] 남태현 편 (NAM TAEHYUN)</h4>
+                                <div class="status">
+                                    <span class="like">
+                                        <img src="assets/images/icon/White.png" />862
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">사업자 정보</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">제휴/프로모션</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                    </ul>
+                    <p>
+                        (주)와이즈피어&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp대표이사 이재국&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp사업자등록번호 206-81-63994&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp통신판매신고 강남 제 02623호<br />
+                        서울특별시 마포구 동교로 23길 26, 2층&nbsp&nbsp&nbsp&nbsp&nbsp&nbspmonkey3@wisepeer.com&nbsp&nbsp&nbsp&nbsp&nbspFax.02)553-4489&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp고객센터 1644-6152<br />
+                        Copyright©WISEPEER Inc., All Rights Reaserved.
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿header {
+    padding: 25px 30px;
+
+    .search {
+        position: relative;
+        float: left;
+
+        input {
+            width: 280px;
+            height: 30px;
+            border-radius: 6px;
+            background-color: rgba(153, 153, 153, 0.1);
+            outline: 0;
+            border: 0;
+            padding: 0 15px 0 30px;
+        }
+
+        i {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+        }
+    }
+
+    .user-conf {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        float: right;
+
+        li {
+            display: inline-block;
+            margin-left: 26px;
+
+            a {
+                color: $light-gray-1;
+                cursor: pointer;
+
+                &:hover {
+                    span {
+                        color: $primary;
+                    }
+                }
+
+                &.s-note {
+                    &:hover {
+                        g {
+                            stroke: $primary;
+                        }
+                    }
+                }
+
+                &.s-user {
+                    &:hover {
+                        g {
+                            g {
+                                stroke: $primary;
+                            }
+                        }
+                    }
+                }
+
+                &.s-config {
+                    &:hover {
+                        g {
+                            path[fill-rule='nonzero'] {
+                                fill: $primary;
+                            }
+
+                            circle {
+                                fill: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            span {
+                float: right;
+            }
+        }
+    }
+}

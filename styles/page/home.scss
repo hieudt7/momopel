@@ -1,0 +1,262 @@
+﻿.home {
+    .row {
+        margin: 0 -10px;
+
+        > div {
+            padding: 0 10px;
+        }
+    }
+
+    .info {
+        text-align: center;
+
+        .subtile-2 {
+            margin: 8px 0 2px 0;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 300;
+            color: $light-gray-1;
+        }
+    }
+
+    .mm-info {
+        h4 {
+            margin: 16px 0 4px 0;
+            color: $mm-white;
+        }
+
+        .status {
+            font-size: 12px;
+            font-weight: 300;
+            color: $light-gray-1;
+
+            .by {
+                display: inline-block;
+                margin-right: 14px;
+            }
+
+            .like {
+                img {
+                    width: 16px;
+                    display: inline-block;
+                    margin-right: 2px;
+                }
+            }
+        }
+
+        p {
+            color: $mm-white;
+            font-size: 14px;
+            font-weight: 300;
+            margin-top: 8px;
+        }
+    }
+
+    .section-title {
+        color: $mm-white;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.4px;
+        margin: 0 0 16px 0;
+
+        @include clearfix() span {
+            float: left;
+
+            &.svg {
+                padding: 3px 0 0 2px;
+            }
+        }
+    }
+
+    .top-news {
+        margin-bottom: 55px;
+
+        .row {
+            margin: 0 -10px;
+        }
+
+        .list-item {
+            > div {
+                border-radius: 2px;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .hot-news {
+        .row {
+            margin: 0 -10px;
+        }
+
+        .list-item {
+            > div {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .top-100 {
+        .album {
+            display: table;
+            width: 100%;
+
+            > div {
+                display: table-cell;
+                vertical-align: top;
+
+                &.avatar {
+                    width: 258px;
+                    /*screen 1k4, 1920 ...*/
+                }
+            }
+
+            .list-album {
+                .source-info {
+                    width: 100%;
+
+                    tr {
+                        border-bottom: 1px solid #2c2c2c;
+                    }
+
+                    .number {
+                        width: 42px;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 28px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: condensed;
+                        line-height: 0.86;
+                        letter-spacing: 0.3px;
+                        text-align: center;
+                        color: $mm-white;
+                    }
+
+                    .top {
+                        width: 42px;
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: 300;
+
+                        svg {
+                            display: inline-block;
+                            margin-right: 2px;
+                        }
+
+                        .down {
+                            color: #FF3E3E;
+                        }
+
+                        .up {
+                            color: #83D6FF;
+                        }
+                    }
+
+                    .name {
+                        padding: 0 13px;
+
+                        h5 {
+                            font-size: 14px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.14;
+                            letter-spacing: normal;
+                            color: $mm-white;
+                            margin-bottom: 2px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.17;
+                            letter-spacing: normal;
+                            color: $light-gray-1;
+                            margin-bottom: 8px;
+                        }
+                    }
+
+                    .action {
+                        a {
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 8px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .today-list {
+    }
+
+    .momo-x {
+        margin-bottom: 55px;
+    }
+
+    .video-list {
+        .mm-info {
+            text-align: center;
+
+            .subtile-1 {
+                margin: 10px 0 3px 0;
+                font-size: 14px;
+            }
+
+            .status {
+                .like {
+                    font-size: 12px;
+                    font-weight: 300;
+
+                    img {
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-top: 100px;
+        padding-bottom: 145px;
+
+        ul {
+            padding: 23px 0;
+            margin: 0;
+            list-style: none;
+            border-top: 2px solid #333333;
+
+            li {
+                display: inline-block;
+                margin-right: 34px;
+
+                a {
+                    font-weight: 300;
+                    color: $light-gray-1;
+                    transition: all ease 0.15s;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        p {
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            color: $light-gray-1;
+        }
+    }
+}
