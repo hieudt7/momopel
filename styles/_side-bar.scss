@@ -1,6 +1,25 @@
 ﻿.side-nav {
     background-color: $dark-gray-1;
 
+    .logo {
+        text-align: center;
+
+        .logo-mobile {
+            display: none;
+
+            @include sm-screen() {
+                display: inline-block;
+                max-width: 40px;
+            }
+        }
+
+        .logo-des {
+            @include sm-screen() {
+                display: none;
+            }
+        }
+    }
+
     .list-menu {
         padding: 0;
         margin: 0;
@@ -11,6 +30,11 @@
             height: 24px;
             padding-left: 25px;
             margin-bottom: 20px;
+
+            @include sm-screen() {
+                padding-left: 0;
+                text-align: center;
+            }
 
             a {
                 display: block;
@@ -29,10 +53,19 @@
                     float: left;
                     padding-top: 2px;
                     margin-left: 17px;
+
+                    @include sm-screen() {
+                        display: none;
+                    }
                 }
 
                 svg {
                     float: left;
+
+                    @include sm-screen() {
+                        float: none;
+                        display: inline-block;
+                    }
                 }
 
                 &.s-home {
@@ -89,5 +122,9 @@
         font-size: 14px;
         font-weight: 300;
         color: $mm-white;
+
+        @include sm-screen() {
+            display: none;
+        }
     }
 }

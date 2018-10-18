@@ -12,6 +12,7 @@
 
         .subtile-2 {
             margin: 8px 0 2px 0;
+            color: $mm-white;
         }
 
         p {
@@ -279,5 +280,17 @@
             letter-spacing: -0.5px;
             color: $light-gray-1;
         }
+    }
+}
+
+.media {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+
+    .media-paying {
+        height: 80px;
+        background-color: $dark-gray-2;
     }
 }
