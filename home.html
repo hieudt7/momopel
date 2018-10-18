@@ -7,7 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/vendor/font-awesome/css/fontawesome-all.css" rel="stylesheet" />
+    <link href="assets/vendor/slick/css/slick.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
+    <script src="assets/vendor/bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/slick/js/slick.js"></script>
 </head>
 <body>
     <div class="side-nav">
@@ -89,44 +93,254 @@
                 </section>
                 <section class="hot-news">
                     <h3 class="section-title">HOT&NEW</h3>
-                    <div class="row list-item">
-                        <div class="col-sm-6 col-md-2">
-                            <img src="assets/images/Album_1.jpg" />
+                    <div class="row list-item" id="slick_news">
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_1.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-2">
-                            <img src="assets/images/Album_2.jpg" />
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_2.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-2">
-                            <img src="assets/images/Album_3.jpg" />
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_3.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-2">
-                            <img src="assets/images/Album_4.jpg" />
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_4.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-2">
-                            <img src="assets/images/Album_5.jpg" />
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_5.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-2">
-                            <img src="assets/images/Album_6.jpg" />
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_6.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_7.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_8.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_9.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_10.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_11.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h5 class="subtile-2">Alan Hill</h5>
+                                <p>Owner Info</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2 item">
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_12.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
@@ -410,42 +624,126 @@
                     </h3>
                     <div class="row">
                         <div class="col-sm-3 col-md-2">
-                            <img src="assets/images/Album_7.jpg" />
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_7.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
                         <div class="col-sm-3 col-md-2">
-                            <img src="assets/images/Album_8.jpg" />
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_8.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
                         <div class="col-sm-3 col-md-2">
-                            <img src="assets/images/Album_9.jpg" />
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_9.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
                         <div class="col-sm-3 col-md-2">
-                            <img src="assets/images/Album_10.jpg" />
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_10.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
                         <div class="col-sm-3 col-md-2">
-                            <img src="assets/images/Album_11.jpg" />
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_11.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
                             </div>
                         </div>
                         <div class="col-sm-3 col-md-2">
-                            <img src="assets/images/Album_12.jpg" />
+                            <div class="overlay-link">
+                                <img src="assets/images/Album_12.jpg" />
+                                <div class="overlay-info">
+                                    <span>
+                                        <span>
+                                            <a title="add list">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="100 100 64 64" enable-background="new 100 100 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49.5999" y1="553.3802" x2="49.8519" y2="552.3802" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M132,100c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32  c0.024-17.649-14.265-31.976-31.914-32C132.057,100,132.029,100,132,100z M144.8,135.2h-9.6v9.6  c0.001,1.767-1.431,3.201-3.199,3.201c-1.767,0.001-3.201-1.431-3.201-3.199c0-0.001,0-0.002,0-0.003v-9.6h-9.6  c-1.767,0.001-3.201-1.431-3.201-3.199c-0.001-1.767,1.431-3.201,3.199-3.201c0.001,0,0.002,0,0.003,0h9.6v-9.6  c-0.001-1.767,1.431-3.201,3.199-3.201c1.767-0.001,3.201,1.431,3.201,3.199c0,0.001,0,0.002,0,0.003v9.6h9.6  c1.767-0.001,3.201,1.431,3.201,3.199c0.001,1.767-1.431,3.201-3.199,3.201C144.802,135.2,144.801,135.2,144.8,135.2z" /></svg>
+                                            </a>
+                                            <a href="" title="play">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="389 112 64 64" enable-background="new 389 112 64 64" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="54.1155" y1="553.1927" x2="54.3675" y2="552.1927" gradientTransform="matrix(64 0 0 -64 -3050.4614 35516.3203)"><stop offset="0" style="stop-color:#FF1EEC" /><stop offset="1" style="stop-color:#FF226C" /></linearGradient><path fill="url(#SVGID_1_)" d="M421,112c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32 c0.024-17.649-14.265-31.976-31.914-32C421.057,112,421.029,112,421,112z M436.787,145.28l-19,11.364l-3.827,2.289 c-0.609,0.432-1.453,0.288-1.885-0.322c-0.155-0.218-0.241-0.478-0.248-0.745V130.56c0.02-0.746,0.641-1.335,1.388-1.315 c0.267,0.007,0.527,0.094,0.745,0.248l22.827,13.654c0.589,0.314,0.812,1.047,0.497,1.636 C437.171,144.994,436.998,145.167,436.787,145.28z" /></svg>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="info">
                                 <h5 class="subtile-2">Alan Hill</h5>
                                 <p>Owner Info</p>
@@ -580,6 +878,14 @@
             </div>
         </div>
     </div>
-
+    <script type="text/javascript">
+        $(function () {
+            $('#slick_news').slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 6,
+            });
+        })
+    </script>
 </body>
 </html>
